@@ -57,7 +57,12 @@ img {
 /*reset css end!*/
 .container{
 	width: 1300px;
-	margin-top: 0 auto;
+	margin: 0 auto;
+}
+@media screen and (max-width: 800px){
+	.container{
+		width: 100%;
+	}
 }
 .header{
 	
@@ -73,9 +78,13 @@ img {
 }
 .header .menu ul li a {
 	color: rgba(255,255,255,.6);
-	line-height: 60px;
-	display: block;
+	height: 60px;
+	display: flex;
+	align-items: center;	
 }
+.header .menu ul li i{
+	margin-right: 10px;
+} 
 .header .menu ul li a:hover {
 	color: #fff;
 }
@@ -105,4 +114,24 @@ img {
 }
 .header .search button:hover{
 	background-color: #316aff;
+}
+.header .login-buttons ul{
+	display: flex;
+}
+.header .login-buttons ul li{
+	margin-left: 15px;
+}
+.header .login-buttons ul li a{
+	display: block;
+	height: 34px;
+	line-height: 34px;
+	color: rgba(255,255,255,.8);
+}
+.header .login-buttons ul li a:hover{
+	color: #fff;
+}
+.header .login-buttons ul li:first-child{
+	background-color: #36855b;
+	border-radius: 4px;
+	padding: 0 15px;
 }
