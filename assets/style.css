@@ -1,3 +1,4 @@
+/*reset css start!*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,6 +25,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+	font-size: 14px;
 }
 ol, ul {
 	list-style: none;
@@ -41,22 +43,60 @@ table {
 	border-spacing: 0;
 }
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
 img {
-    border: 0;
+	border: 0;
 }
 :focus {
-    outline: 0;
+	outline: 0;
 }
 .clear {
-    clear: both;
+	clear: both;
 }
+/*reset css end!*/
 .container{
 	width: 1300px;
 	margin-top: 0 auto;
 }
 .header{
-	height: 60px;
+	
 	background-color: #141618;
+}
+.header .container{
+	height: 60px;
+	display: flex;
+	align-items: center;
+}
+.header .logo{
+	margin-right: 40px;
+}
+.header .menu ul li a {
+	color: rgba(255,255,255,.6);
+	line-height: 60px;
+	display: block;
+}
+.header .menu ul li a:hover {
+	color: #fff;
+}
+.header .search {
+	display: flex;
+	border-radius: 4px;
+	overflow: hidden;
+}
+.header .search input {
+	height: 34px;
+	width: 250px;
+
+	background-color: #21252d;
+	padding: 0 10px;
+}
+.header .search input::placeholder{
+	color: rgba(255,255,255,.6);
+}
+.header .search button{
+	width: 32px;
+	height: 34px;
+	background-color: #21252d;
+	color: #fff;
 }
