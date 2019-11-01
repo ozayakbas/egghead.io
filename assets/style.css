@@ -83,6 +83,7 @@ img {
 	display: flex;
 	border-radius: 4px;
 	overflow: hidden;
+	margin-left: auto;
 }
 .header .search input {
 	height: 34px;
@@ -99,4 +100,9 @@ img {
 	height: 34px;
 	background-color: #21252d;
 	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+}
+.header .search button:hover{
+	background-color: #316aff;
 }
