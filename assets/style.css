@@ -59,6 +59,7 @@ img {
 	width: 1600px;
 	margin: 0 auto;
 }
+/*HEADER START!*/
 header {
 	background: #141618;
 }
@@ -118,4 +119,62 @@ header .container .users a:first-child{
 	padding: 0 15px;
 	margin: 0 15px;
 	box-sizing: border-box;
+}
+/*HEADER END!*/
+
+/*ARTICLE START !*/
+article .bg-blue{
+	width: 100%;
+	height: 640px;
+	background-image: linear-gradient(170deg,#212A39 0%,#181E28 100%);
+}
+article .bg-blue .container{
+	width: 1180px;
+	display: flex;
+	height: 100%;
+	align-items: center;
+}
+/*SECTION LEFT START!*/
+article .bg-blue .container .left{
+
+}
+article .bg-blue .container .left h2{
+	width: 590px;
+	height: 168px;
+	font-size: 48px;
+	line-height: 56px;
+	color: #fff;
+
+}
+article .bg-blue .container .left p{
+	font-size: 24px;
+	line-height: 33px;
+	color: #B0B6BE;
+	margin: 10px 0 65px 0;
+}
+article .bg-blue .container .left button{
+	line-height: 20px;
+	height: 48px;
+	width: 250px;
+	background-color: #316aff;
+	border-radius: 5px;
+	cursor: pointer;
+
+}
+article .bg-blue .container .left button a{
+	color: #fff;
+}
+article .bg-blue .container .left button a:hover{
+
+}
+/*SECTION LEFT END!*/
+
+/*SECTION RIGHT START!*/
+article .bg-blue .container .right {
+	display: flex;
+	margin-left: auto;
+
+}
+article .bg-blue .container .right img{
+	width: 480px;
 }
