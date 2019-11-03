@@ -55,7 +55,7 @@ img {
 	clear: both;
 }
 /*RESET CSS END!*/
-.container{
+.container {
 	width: 1600px;
 	margin: 0 auto;
 }
@@ -63,7 +63,7 @@ img {
 header {
 	background: #141618;
 }
-header .container{
+header .container {
 	display: flex;
 	align-items: center;
 	height: 60px;
@@ -71,46 +71,45 @@ header .container{
 header .container span {
 	margin-left: 30px;
 }
-header .container span a{
+header .container span a {
 	color: rgba(255,255,255,.6);
 }
 header .container a:hover{
 	color: #fff;
 }
-header .container span a i{
+header .container span a i {
 	margin-right: 10px;
 }
-header .container .search{
+header .container .search {
 	display: flex;
 	margin-left: auto;
 	border-radius: 4px;
 	overflow: hidden;
 }
-header .container .search input{
+header .container .search input {
 	height: 34px;
 	width: 250px;
 	background-color: #21252d;
 	padding: 0 10px;
 	color: #fff;
 }
-header .container .search input::placeholder{
+header .container .search input::placeholder {
 	color: rgba(255,255,255,.6);
 }
-header .container .search button{
+header .container .search button {
 	width: 32px;
 	height: 34px;
 	background-color: #21252d;
 	color: white;
 }
-header .container .search button:hover{
+header .container .search button:hover {
 	background: #316aff;
 	cursor: pointer;
 }
-header .container .users a{
+header .container .users a {
 	color: #fff;
 }
-
-header .container .users a:first-child{
+header .container .users a:first-child {
 	height: 34px;
 	border-radius: 4px;
 	line-height: 34px;
@@ -123,58 +122,97 @@ header .container .users a:first-child{
 /*HEADER END!*/
 
 /*ARTICLE START !*/
-article .bg-blue{
+/*SECTION BG-BLUE START!*/
+article .bg-blue {
 	width: 100%;
 	height: 640px;
 	background-image: linear-gradient(170deg,#212A39 0%,#181E28 100%);
 }
-article .bg-blue .container{
-	width: 1180px;
+article .bg-blue .container {
 	display: flex;
+	width: 1180px;
 	height: 100%;
 	align-items: center;
 }
-/*SECTION LEFT START!*/
-article .bg-blue .container .left{
+article .bg-blue .container .left {
 
 }
-article .bg-blue .container .left h2{
+article .bg-blue .container .left h2 {
 	width: 590px;
 	height: 168px;
 	font-size: 48px;
 	line-height: 56px;
 	color: #fff;
-
 }
-article .bg-blue .container .left p{
+article .bg-blue .container .left p {
 	font-size: 24px;
 	line-height: 33px;
 	color: #B0B6BE;
 	margin: 10px 0 65px 0;
 }
-article .bg-blue .container .left button{
+article .bg-blue .container .left button {
 	line-height: 20px;
 	height: 48px;
 	width: 250px;
 	background-color: #316aff;
 	border-radius: 5px;
 	cursor: pointer;
-
 }
-article .bg-blue .container .left button a{
+article .bg-blue .container .left button a {
 	color: #fff;
+	letter-spacing: 1px;
 }
-article .bg-blue .container .left button a:hover{
+article .bg-blue .container .left button a:hover {
 
 }
-/*SECTION LEFT END!*/
-
-/*SECTION RIGHT START!*/
 article .bg-blue .container .right {
-	display: flex;
 	margin-left: auto;
+}
+article .bg-blue .container .right img {
+	width: 480px;
+}
+article .bg-blue .container .right img::hover {
 
 }
-article .bg-blue .container .right img{
-	width: 480px;
+/*SECTION BG-BLUE END!*/
+
+/*SECTION BG-WHITE START!*/
+article .bg-white {
+	background-color: #f4f7f9;
+}
+article .bg-white .container {
+	width: 1180px;
+}
+article .bg-white .container .boxs{
+	width: 404px;	
+	height: 624px;
+	padding-top: 120px;
+}
+article .bg-white .container .boxs a {
+	display: inline-block;	
+	width: 180px;
+	height: 180px;
+	background-color: white;
+	box-shadow: 0 5px 15px -5px rgba(0,0,0,0.1);
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+article .bg-white .container .boxs a img {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	margin: auto;
+	padding-top: 55px;
+
+}
+article .bg-white .container .boxs a span {
+	color: rgba(0,0,0,.9);
+	font-size: 18px;
+	margin-top: 15px;
+	display: flex;
+	justify-content: center;
+}
+article .bg-white .container .text-area{
+	width: 500px;
+	margin-left: auto;
 }
