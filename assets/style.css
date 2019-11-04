@@ -236,6 +236,7 @@ article .reviews .container .rev1 {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	padding: 2px 0;
 }
 article .reviews .container .rev1 .reviews-icon {
 	width: 56px;
@@ -247,6 +248,7 @@ article .reviews .container .rev1 h3 {
 	font-size: 22px;
 	max-width: 700px;
 	text-align: center;
+	line-height: 35px;
 }
 article .reviews .container .shoun-cave {
 	display: flex;
@@ -264,7 +266,7 @@ article .reviews .container .rev1 .shoun-cave h4 {
 	font-weight: 300;
 	color: #333030;
 	display: flex;
-	margin: 25px 0 0 20px;
+	margin: 25px 0 0 10px;
 }
 /*CREATE-ACC START!*/
 article .create-acc{
@@ -273,6 +275,8 @@ article .create-acc{
 	margin: 0 auto;
 	width: 1180px;
 	height: 538px;
+	padding-top: 20px;
+	margin-top: 40px;
 }
 article .create-acc {
 	display: flex;
@@ -320,36 +324,80 @@ article .create-acc .right img{
 /*FOOTER START!*/
 footer{
 	background: #141618;
-	height: 479px;
 }
 footer .container {
 	width: 1276px;
 	margin: 0 auto;
-	padding: 64px 32px;
+	padding: 64px 32px 30px 32px;
 }
-footer .footer-menu {
+/*footer left start!*/
+footer .container .footer-section {
 	display: flex;
 }
-footer .container .footer-menu p {
+footer .container .footer-section p {
 	color: hsla(0,0%,100%,.8);
 	letter-spacing: 2px;
 	font-weight: 600;
 	margin-top: 30px;
 }
-footer .container .footer-menu ul {
+footer .container .footer-section ul {
 	margin-top: 15px;
 }
-footer .container .footer-menu ul li {
+footer .container .footer-section ul li {
 	padding-top: 8px;
 	padding-bottom: 8px;
 
 }
-footer .container .footer-menu a {
+footer .container .footer-section a {
 	color: #666B70;
 	font-size: 16px;
 }
-footer .container .footer-menu-left{
-	margin-right: 40px;
+footer .container .footer-section .menu-content{
+	margin-right: 30px;
 }
-footer .container .search-box{
+/*footer right start!*/
+footer .container .footer-section .footer-search{
+	margin-left: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 55px;
+}
+footer .container .footer-section .footer-search .search-btn{
+	border-radius: 4px;
+	overflow: hidden;
+	display: flex;
+}
+footer .container .footer-section .footer-search h2 {
+	color: white;
+	font-size: 20px;
+}
+footer .container .footer-section .footer-search .search-btn input {
+	background-color: #21252d;
+	padding: 1px 0 1px 16px;
+	width: 390px;
+	height: 46px;
+}
+footer .container .footer-section .footer-search .search-btn input::placeholder{
+	color: rgba(255,255,255,.6);
+}
+footer .container .footer-section .footer-search .search-btn button {
+	padding: 0 15px;
+	background: #316aff;
+	color: #fff; 
+}
+footer .container .footer-section .footer-search .search-btn button:hover{
+	cursor: pointer;
+}
+footer .container .base-line {
+	border-top: 1px solid rgba(255, 255, 255, .1) ;
+	margin-top: 30px;
+}
+footer .container .base-line ul {
+	margin: 20px 0 40px 0;
+	display: flex;
+}
+footer .container .base-line ul li a {
+	color: #666B70;
+	margin-right: 20px;
 }
