@@ -88,7 +88,7 @@ header .container .search {
 }
 header .container .search input {
 	height: 34px;
-	width: 250px;
+	width: 256px;
 	background-color: #21252d;
 	padding: 0 10px;
 	color: #fff;
@@ -118,6 +118,50 @@ header .container .users a:first-child {
 	padding: 0 15px;
 	margin: 0 15px;
 	box-sizing: border-box;
+}
+@media screen and (min-width: 576px){
+	header .container{
+		width: 100%;
+	}
+
+}
+@media screen and (min-width: 768px){
+	header{
+		padding: 0 30px;
+	}
+	header .container{
+		height: 48px;
+	}
+	header .container span {
+		display: none;
+	}
+}
+@media screen and (min-width: 992px){
+	header{
+		padding: 0 30px;
+	}
+	header .container{
+		margin: 0 auto;
+		width: 100%;
+		height: 60px;
+	}
+	header .container .search input{
+		width: 368px;
+	}
+}
+@media screen and (min-width: 1024px) {
+	header{
+
+	}
+	header .container{
+		margin: 0 auto;
+		max-width: 1616px;
+		height: 60px;
+	}
+	header .container .search input{
+		width: 256px;
+	}
+	
 }
 /*ARTICLE START !*/
 /*SECTION BG-BLUE START!*/
@@ -389,6 +433,7 @@ footer .container .footer-section .footer-search .search-btn button {
 footer .container .footer-section .footer-search .search-btn button:hover{
 	cursor: pointer;
 }
+/*base-line start!*/
 footer .container .base-line {
 	border-top: 1px solid rgba(255, 255, 255, .1) ;
 	margin-top: 30px;
