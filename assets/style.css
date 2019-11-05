@@ -63,6 +63,8 @@ img {
 header {
 	background: #141618;
 }
+
+
 header .container {
 	display: flex;
 	align-items: center;
@@ -119,45 +121,9 @@ header .container .users a:first-child {
 	margin: 0 15px;
 	box-sizing: border-box;
 }
-/*media query start!*/
-@media screen and (min-width: 576px){
-	header .container{
-		width: 100%;
-	}
 
-}
-@media screen and (min-width: 768px){
-	header{
-		padding: 0 30px;
-	}
-	header .container{
-		height: 48px;
-	}
-}
-@media screen and (min-width: 992px){
-	header{
-		padding: 0 30px;
-	}
-	header .container{
-		margin: 0 auto;
-		width: 100%;
-		height: 60px;
-	}
-	header .container .search input{
-		width: 368px;
-	}
-}
-@media screen and (min-width: 1024px) {
-	header .container{
-		margin: 0 auto;
-		max-width: 1616px;
-		height: 60px;
-	}
-	header .container .search input{
-		width: 256px;
-	}
-	
-}
+
+
 /*ARTICLE START !*/
 /*SECTION BG-BLUE START!*/
 article .bg-blue {
@@ -166,13 +132,18 @@ article .bg-blue {
 	background-image: linear-gradient(170deg,#212A39 0%,#181E28 100%);
 }
 article .bg-blue .container {
-	display: flex;
+	display: block;
 	width: 1180px;
 	height: 100%;
 	align-items: center;
 }
 article .bg-blue .container .left {
-
+	float: left;
+	padding:200px 0 0 0;
+}
+article .bg-blue .container .right {
+	float: right;
+	padding:65px 0 0 0;
 }
 article .bg-blue .container .left h2 {
 	width: 590px;
@@ -371,7 +342,8 @@ footer .container {
 }
 /*footer left start!*/
 footer .container .footer-section {
-	display: flex;
+	display: inline-block;
+	width: 100%;
 }
 footer .container .footer-section p {
 	color: hsla(0,0%,100%,.8);
@@ -396,11 +368,19 @@ footer .container .footer-section .menu-content{
 }
 /*footer right start!*/
 footer .container .footer-section .footer-search{
-	margin-left: auto;
-	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	margin-bottom: 55px;
+	float: right;
+	display: inline-block;
+}
+footer .container .footer-section .left{
+	width: 300px;
+	float: left;
+	display: inline-block;
+}
+footer .container .footer-section .left .menu-item{
+	float: left;
+	display: inline-block;
 }
 footer .container .footer-section .footer-search .search-btn{
 	border-radius: 4px;
@@ -440,4 +420,167 @@ footer .container .base-line ul {
 footer .container .base-line ul li a {
 	color: #666B70;
 	margin-right: 20px;
+}
+
+
+@media screen and (max-width: 1188px){
+	.container{
+		width: 100% !important;
+		padding-left:20px !important;
+		padding-right:20px !important;
+		box-sizing: border-box;
+	}
+	header .container{
+		height:auto;
+		padding:10px;
+		box-sizing: border-box;
+	}
+	header .container a.logo-wrap{
+		width:35px;
+		overflow: hidden;
+	}
+	header .container span,
+	header .container .users{
+		display: none;
+	}
+	header .container .search{
+		width: 248px;
+	}
+	header .container .search{
+		width: 248px;
+	}
+	
+
+	article .bg-blue{
+		height: auto;
+		display: inline-block;
+		padding-bottom: 50px;
+	}
+	article .bg-blue .container .right img{
+		width: 70%;
+	}
+	article .bg-blue .container .right{
+		text-align: center;
+		width: 100%;
+	}
+	article .bg-blue .container .left{
+		padding:0;
+		text-align: center;
+		width: 100%;
+	}
+	article .bg-blue .container .left h2{
+		width: auto;
+		height: auto;
+		font-size: 25px;
+		line-height: normal;
+		padding:30px 0 10px 0;
+	}
+	article .bg-blue .container .left p{
+		font-size: 20px;
+		margin:0;
+		padding:0 0 40px 0;
+	}
+
+
+	article .bg-white .container{
+		padding:40px 0;
+	}
+	article .bg-white .container .boxs{
+		display: none;
+	}
+	article .bg-white .container .text-area{
+		width: 100%;
+		padding: 0;
+	}
+	article .bg-white .container .text-area h3{
+		font-size: 30px;
+	}
+
+
+
+	article .reviews .container{
+		padding:30px 0;
+	}
+	article .reviews .container .rev1 h3{
+		font-size:18px;
+		margin:0;
+		line-height: 25px;
+		padding:25px 0;
+	}
+	article .reviews .container .shoun-cave .img-shaunCave{
+		margin:0 15px 0 0;
+	}
+	article .reviews .container .rev1 .shoun-cave h4{
+		margin:0;
+	}
+	article .reviews .container{
+		width: 90% !important;
+	}
+	article .create-acc{
+		padding:0 20px;
+		box-sizing: border-box;
+	}
+	article .create-acc,
+	article .create-acc .right,
+	article .create-acc .left{
+		width: 100%;
+		display: inline-block;
+	}
+	article .create-acc .left h3{
+		margin:0 0 10px 0;
+		font-size: 27px;
+	}
+	article .create-acc .left a{
+
+	}
+	article .create-acc .right img{
+		position: static;
+		width: 100%;
+		padding:0;
+		margin:30px 0 0 0;
+	}
+	footer .container{
+		padding: 0;
+	}
+	footer .container .footer-logo{
+		padding:20px 0;
+	}
+	footer .container .footer-section .footer-search h2{
+		font-size: 17px;
+	}
+	footer .container .footer-section .footer-search{
+		margin:0;
+		width: 100%;
+	}
+	footer .container .footer-section .footer-search .search-btn{
+		display: inline-block;
+		width: 100%;
+	}
+	footer .container .footer-section .footer-search .search-btn input{
+		width: 85%;
+		float: left;
+	}
+	footer .container .footer-section .footer-search .search-btn button{
+		height: 46px;
+		width: 15%;
+		float: left;
+	}
+	footer .container .footer-section .menu-content{
+		float: left;
+	}
+	footer .container .footer-section .left .menu-item.menu-about{
+		float: right;
+	}
+	footer .container .base-line ul{
+		margin: 0;
+		display: inline-block;
+		width: 100%;
+	}
+	footer .container .base-line ul li{
+		width: 50%;
+		display: inline-block;
+		float: left;
+		text-align: center;
+		padding:30px 0;
+	}
 }
