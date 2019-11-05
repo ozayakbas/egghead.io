@@ -119,6 +119,7 @@ header .container .users a:first-child {
 	margin: 0 15px;
 	box-sizing: border-box;
 }
+/*media query start!*/
 @media screen and (min-width: 576px){
 	header .container{
 		width: 100%;
@@ -131,9 +132,6 @@ header .container .users a:first-child {
 	}
 	header .container{
 		height: 48px;
-	}
-	header .container span {
-		display: none;
 	}
 }
 @media screen and (min-width: 992px){
@@ -150,9 +148,6 @@ header .container .users a:first-child {
 	}
 }
 @media screen and (min-width: 1024px) {
-	header{
-
-	}
 	header .container{
 		margin: 0 auto;
 		max-width: 1616px;
